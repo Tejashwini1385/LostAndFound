@@ -1,0 +1,117 @@
+/* Post Item Form styling */
+.post-item-form {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #d7ccc8; /* Similar to login container background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #4b2e1e; /* Deep brown text */
+  font-family: "Arial", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-right: 60px;
+  padding-left: 40px;
+}
+
+.post-item-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.post-item-form h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #8c4f2b; /* Warm brown */
+  text-shadow: 1px 1px 5px rgba(140, 79, 43, 0.4);
+}
+
+/* Form styling */
+.post-item-form form div {
+  margin-bottom: 20px;
+}
+
+.post-item-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #6b4c3a; /* Soft brown for labels */
+}
+
+.post-item-form input[type="text"],
+.post-item-form input[type="file"],
+.post-item-form textarea,
+.post-item-form select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d1c1b5; /* Beige border */
+  border-radius: 8px;
+  background-color: #f9f4ef; /* Light beige input background */
+  font-size: 16px;
+  color: #4b2e1e;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item-form input[type="text"]:focus,
+.post-item-form input[type="file"]:focus,
+.post-item-form textarea:focus,
+.post-item-form select:focus {
+  border-color: #8c4f2b; /* Highlighted warm brown border */
+  box-shadow: 0 0 10px rgba(140, 79, 43, 0.4);
+  outline: none;
+}
+
+.post-item-form .contact-input {
+  display: flex;
+  gap: 10px;
+}
+
+.post-item-form .contact-input select {
+  flex: 0.3;
+}
+
+.post-item-form .contact-input input {
+  flex: 0.7;
+}
+
+.post-item-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Button styling */
+.post-item-form button {
+  width: 100%;
+  padding: 14px;
+  background: #8c4f2b; /* Warm brown button */
+  color: #f5e9dc; /* Beige text */
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #5d4037;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.post-item-form button:hover {
+  background: #c0704d; /* Lightened warm brown */
+  color: #fff8f1; /* Softer beige on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 112, 77, 0.4);
+}
+
+/* Placeholder color */
+.post-item-form input::placeholder {
+  color: #a89081;
+  font-size: 14px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

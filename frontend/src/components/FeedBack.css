@@ -1,0 +1,113 @@
+/* Container Styling */
+.feedback-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #d7ccc8; /* Same background as login */
+  border-radius: 12px; /* Rounded corners for consistency */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Similar box shadow */
+  color: #4b2e1e; /* Deep brown text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-right: 60px;
+}
+
+/* Hover Effect */
+.feedback-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.feedback-heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #8c4f2b; /* Warm brown */
+  text-shadow: 1px 1px 5px rgba(140, 79, 43, 0.4);
+}
+
+.feedback-subheading {
+  text-align: center;
+  font-size: 18px;
+  color: #6b4c3a; /* Soft brown */
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.feedback-form {
+  margin-bottom: 30px;
+}
+
+.feedback-textarea {
+  width: 100%;
+  border: 2px solid #d1c1b5; /* Beige border */
+  border-radius: 8px; /* Matches login inputs */
+  background-color: #f9f4ef; /* Light beige input background */
+  padding: 12px;
+  font-size: 16px;
+  color: #4b2e1e; /* Deep brown */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical; /* Keep resize for better usability */
+}
+
+.feedback-textarea:focus {
+  border-color: #8c4f2b; /* Highlighted warm brown border */
+  box-shadow: 0 0 10px rgba(140, 79, 43, 0.4);
+  outline: none;
+}
+
+/* Button Styling */
+.feedback-submit-button {
+  width: 100%; /* Full width for consistency */
+  padding: 14px;
+  background: #8c4f2b; /* Warm brown button */
+  color: #f5e9dc; /* Beige text */
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #5d4037;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feedback-submit-button:hover {
+  background: #c0704d; /* Lightened warm brown */
+  color: #fff8f1; /* Softer beige on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 112, 77, 0.4);
+}
+
+/* Feedback List */
+.feedback-list-heading {
+  font-size: 20px;
+  color: #8c4f2b; /* Warm brown */
+  margin-bottom: 15px;
+}
+
+.feedback-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feedback-list-item {
+  border-bottom: 1px solid #d1c1b5; /* Matches border of input */
+  padding: 10px 0;
+  font-size: 16px;
+  color: #4b2e1e;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .feedback-container {
+    padding: 20px;
+  }
+
+  .feedback-heading {
+    font-size: 22px;
+  }
+
+  .feedback-submit-button {
+    font-size: 16px;
+  }
+}

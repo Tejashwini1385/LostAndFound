@@ -1,0 +1,97 @@
+/* LostItem.css */
+
+/* General Container */
+.lost-items-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  /* Heading Style */
+  .lost-items-heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    justify-content: center;
+  }
+  
+  /* Card Container */
+  .lost-item-card {
+    background-color:  #f5e9dc;
+    width:48%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .lost-item-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  /* Grid layout for cards */
+.lost-items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+  /* Item Image */
+  .lost-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Multiple Additional Images */
+  .lost-item-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .lost-item-image-side-by-side {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Text and Contact Info */
+  .lost-item-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .lost-item-card p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Contact Info */
+  .lost-item-card p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* No Items Message */
+  .no-items-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 30px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .lost-item-image-side-by-side {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

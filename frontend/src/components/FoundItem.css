@@ -1,0 +1,89 @@
+/* General container styling */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: auto; /* Added auto height to prevent errors */
+}
+  
+/* Heading styling */
+.found-items-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color:#68241e;
+}
+  
+/* Grid layout for cards */
+.found-items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+/* Individual card styling */
+.found-item-card {
+    background-color:  #f5e9dc;
+    width: 48%;
+    height: auto; /* Changed to auto to ensure content fits */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.found-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+  
+/* Card title styling */
+.found-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+/* Card description styling */
+.found-item-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+  
+/* Card contact styling */
+.found-item-contact {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+  
+/* Card image styling */
+.found-item-image {
+    width: 100%;
+     /* Fixed height for consistent display */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+  
+/* Side-by-side image styling for additional images */
+.found-item-images {
+    display: flex; /* Added flex for layout */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.found-item-image-side-by-side {
+    width: 48%; /* Correct percentage for side-by-side images */
+    height: auto; /* Fixed height for consistent display */
+    border-radius: 8px;
+    object-fit: cover;
+}
+  
+/* No items message styling */
+.no-items-message {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+}
